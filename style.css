@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,700;1,200;1,300;1,600&family=Poppins:wght@300;400&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    background-color: #eef8ff;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+     
+}
+.logo{
+    margin: 15px 50px;
+    
+}
+.logo h1{
+    color: green;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo span{
+    color: red;
+
+}
+.nav-bar{
+    margin: 15px 20px;
+}
+.nav-bar ul{
+    display: flex;
+
+}
+.nav-bar ul li{
+    padding: 20px;
+    list-style: none;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(17, 148, 17);
+
+}
+.fa-solid{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.nav-bar ul li a:hover{
+    color: red;
+    transition: 0.2s;
+}
+.home{
+    position: relative;
+    top: 0;
+    background-image:url(images/image1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(#e4e4d4);  
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+    z-index: 1;
+    
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0%{
+        background-image: url(images/image2.jpg);
+    }
+    20%{
+        background-image: url(images/image3.jpg);
+    }
+    25%{
+        background-image: url(images/image1.jpg);
+    }
+    45%{
+        background-image: url(images/image6.jpg);
+    }
+    50%{
+        background-image: url(images/image3.jpg);
+    }
+    70%{
+        background-image: url(images/image2.jpg);
+    }
+    75%{
+        background-image: url(images/image1.jpg);
+    }
+    95%{
+        background-image: url(images/image6.jpg);
+    }
+    
+}
+    
+.container.home.home-page{
+    margin-top: 10%;
+    margin-left: 15%;
+    float: left;width: 20%;
+}
+ .home-page h1{
+    font-size: 60px;
+    font-weight: 800;
+    padding-top: 10%;
+    padding-left: 15%;   
+}
+.home-page p{
+    font-size: 18px;
+    color: black;
+    padding: 15px;
+    padding-left: 15%;  
+    font-weight: bold; 
+}
+.home-page button{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-left: 15%;
+    cursor: pointer;
+}
+/* into sec     */
+.intro-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px;
+}
+.intro-section.img{
+    padding: 20px ;
+    width: 300px;
+    display: inline-block;
+}
+.img h2{
+    color: green;
+}
+.img img{
+    padding: 20px 0;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+.intro-section .para{
+    margin-left: 40px;
+    padding-left: 10px;
+    margin-top: 5%;
+}
+.intro-section .para p{
+    font-size: 16px;
+    text-align: left;
+    word-spacing: 1px;
+}
+
+/*     test   */
+
+.whole-sec{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+.testimonials h2{
+    margin-left: 12%;
+    color: green;
+}
+.user{
+    outline: 1px solid rgb(45, 134, 57);
+    padding: 10px;
+    width: 400px;
+    height: 170px;
+    margin: 20px 20px;
+    border-radius: 30px;
+    position: relative;
+
+}
+.user img{
+    position: absolute;
+    border-radius: 50%;
+}
+ .user p{
+    font-size: 16px;
+    text-align: left;
+    padding: 10px 10px;
+}
+ .user h3{
+    font-size: 18px;
+    padding-left: 30px;
+
+}
+
+/*    contact   */
+
+.contact{
+    background-color: lightgreen;
+    width: 600px;
+    height: 480px;
+    margin-top: 90px;
+    margin-left: 25%;
+    border-radius: 10px;
+   
+}
+.contact h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color: green;
+}
+.contact .form1{
+    padding: 50px;
+
+}
+.form1 label{
+    margin-top: 10px;
+    padding: 10px 10px;
+      font-size: 20px;
+
+}
+.form1  input{
+    width: 80%;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.form1 .input1{
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: 70px 10px;
+}
+.form1 button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+}
+.contact .btn2{
+    background-color: #fff;
+    color: black;
+    margin-top: 10px;
+    cursor: pointer;
+    margin: 10px 40px 10px;
+
+}
+.contact .btn2:hover{
+    background-color: rgb(219, 27, 27);
+    transition: 1s ease-in-out;
+    
+}
+
+/*footer */
+
+footer{
+    margin-top: 90px;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right,#e0aa44, #ddc452);
+    color: #fff;
+    padding: 80px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.address h1{
+    color: green;
+}
+
+.links h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    color: rgb(219, 20, 37);
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+ul li a:hover{
+    color: rgb(219, 20, 37);
+}
+.maps h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    color: rgb(219, 20, 37);
+
+}
+.undrline{
+    border-bottom: 2px solid green;
+    margin-top: 5px;
+}
+.copy{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+hr{
+    width: 90%;
+    margin-left: 30px;
+    color: black;
+}
